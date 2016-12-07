@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* ============================================
+Base
+============================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="button"],
+input[type="submit"],
+textarea, select, option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", Arial, sans-serif;
+  border-radius: 0;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", Arial, sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #333;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ============================================
+Blocks
+============================================ */
+.main {
+  width: 1000px;
+  margin: 50px auto 0;
+}
+.main_ttl {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.acd {
+  width: 100%;
+  margin: 30px 0;
+}
+.acd_btn {
+  padding: 10px;
+  background-color: #333;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FFF;
+  cursor: pointer;
+}
+.acd_btn:not(:first-child) {
+  border-top: 1px solid #FFF;
+}
+.acd_body {
+  display: none;
+  padding: 20px;
+  background-color: #EFEFEF;
+}
+.acd_body p:not(:last-child) {
+  margin-bottom: 20px;
+}

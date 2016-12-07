@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+//////////////////////////////////////////////////////////////////////////
+//
+//  Blocks : acd
+//
+//////////////////////////////////////////////////////////////////////////
+
+.acd{
+  width: 100%;
+  margin: 30px 0;
+  @include e(btn){
+    padding: 10px;
+    background-color: #333;
+    @include font-size(14);
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    &:not(:first-child){
+      border-top: 1px solid #FFF;
+    }
+  }
+  @include e(body){
+    display: none;
+    padding: 20px;
+    background-color: #EFEFEF;
+    p{
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
